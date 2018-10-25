@@ -24,7 +24,7 @@ def get_all():
     html = get_html('https://movie.douban.com/top250')
     get_url(html, urlList)
     for i in range(25, 250, 25):
-        time.sleep(1)
+        # time.sleep(1)
         html = get_html('https://movie.douban.com/top250?start=' + str(i) + '&filter=')
         get_url(html, urlList)
 
