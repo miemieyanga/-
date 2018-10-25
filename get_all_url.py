@@ -22,6 +22,8 @@ def get_all():
     for i in range(25, 250, 25):
         html = get_html('https://movie.douban.com/top250?start=' + str(i) + '&filter=')
         get_url(html, urlList)
+        
+    return urlList
 
     # for item in urlList:
     #    print(item)
