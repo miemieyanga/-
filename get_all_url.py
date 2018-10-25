@@ -23,8 +23,8 @@ def get_all():
         html = get_html('https://movie.douban.com/top250?start=' + str(i) + '&filter=')
         get_url(html, urlList)
 
-    for item in urlList:
-        print(item)
+    # for item in urlList:
+    #    print(item)
 
 
 if __name__ == "__main__":
